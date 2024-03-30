@@ -1,0 +1,26 @@
+[
+  {
+    "seller": {
+      "company_name": "seller_company_name",
+      "username": "seller_username",
+      "password": "seller_password",
+      "bank_account": 0
+    }
+  },
+  {
+    "customer": {
+      "name": "A",
+      "surname": "M",
+      "shipping_address": "QA",
+      "username": "customer_username",
+      "password": "customer_password",
+      "money_balance": 20000
+    }
+  },
+  {
+    "admin": {
+      "username": "admin",
+      "password": "password"
+    }
+  }
+]

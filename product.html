@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tesla Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!------------------------------ featured categories------------------------------>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about_us.html">About</a></li>
+              <li><a href="contact_us.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+              <li class="search">
+                <input type="text" placeholder="Search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-link">
+            <a id="cartLink"
+              ><img src="images/cart.png" width="30px" height="30px" />
+              <span id="moneyBalance"></span
+            ></a>
+            <div class="mobile-menu">
+              <img
+                src="images/menu.png"
+                class="menu-icon"
+                onClick="toggleMenu()"
+                alt="Menu Icon"
+              />
+              <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li class="search">
+                  <input type="text" placeholder="Search" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown" id="profileContainer" style="display: none">
+              <button class="dropdown-btn logout__btn">
+                <i class="bi bi-person-circle"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div id="customerMenu" style="display: none">
+                  <!-- Your menu items here -->
+                  <a href="my_order.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-cart"></i>
+                      <span>My Orders</span>
+                    </div>
+                  </a>
+                </div>
+                <div id="sellerMenu" style="display: none">
+                  <!-- Your menu items here -->
+                  <a href="order_list.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-cart"></i>
+                      <span>Sales History</span>
+                    </div>
+                  </a>
+                  <a href="products.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-list-ul"></i>
+                      <span>View items</span>
+                    </div>
+                  </a>
+                  <a href="add_product.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-plus-circle"></i>
+                      <span>Add Product</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-menu-list" id="logout-btn">
+                  <i class="bi bi-box-arrow-left"></i>
+                  <span>Log Out</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--</div>-->
+
+    <!------------------------------ Single product details------------------------------>
+    <div class="small-container single-product">
+      <!--<h2 class="title" >Featured Products</h2>-->
+      <div class="row">
+        <div class="col-2">
+          <div id="productImg"></div>
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img
+                src="images/dmitry-novikov-49gi04Retc4-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/dmitry-novikov-Y1BCrRUK26Y-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/roberto-nickson-Ddjl0Cicdr4-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/taras-chernus-9uM2WBpum3M-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <p id="productBreName"></p>
+          <h1 id="productName"></h1>
+          <h4 id="productPrice"></h4>
+          <select>
+            <option>Select Color</option>
+            <option>Midnight Silver Metallic</option>
+            <option>Pearl White Multi-Coat</option>
+            <option>Deep Blue Metallic</option>
+          </select>
+          <input type="number" values="1" />
+          <button class="btn" id="addToCartBtn">Add to Cart</button>
+          <h3>Product Details <i class="fa fa-indent"></i></h3>
+          <br />
+          <p id="productDesc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------Title------------------------------------->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <a href="products.html"><p>View More</p></a>
+      </div>
+    </div>
+
+    <!----------------------------------products------------------------------------->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <a href="tesla_roadster.html"
+            ><img src="images/anthony-a-atIR2-a_wQk-unsplash.jpg"
+          /></a>
+          <a href="tesla_roadster.html"><h4>Tesla Roadster</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$96000</p>
+        </div>
+        <div class="col-4">
+          <a href="model3.html"
+            ><img src="images/austin-ramsey-U-DgtDG6MRo-unsplash.jpg"
+          /></a>
+          <h4>Tesla Model 3</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$29000</p>
+        </div>
+        <div class="col-4">
+          <a href="modelx.html"
+            ><img src="images/philip-myrtorp-fL8WLU-LmFE-unsplash.jpg"
+          /></a>
+          <h4>Tesla Model X</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$65000</p>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" />
+            <p>
+              Tesla's goal is to accelerate the world's transition to
+              sustainable energy through innovative electric vehicles and
+              renewable energy solutions.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <!--horizontal line-->
+        <p class="copyright">Copyright 2024 - A, Tesla, QU</p>
+      </div>
+    </div>
+
+    <script>
+      const allProductsJSON = localStorage.getItem("allProducts");
+      const allProducts = JSON.parse(allProductsJSON);
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const productName = urlParams.get("name");
+
+      const filteredProducts = allProducts?.filter(
+        (product) => product.name === productName
+      );
+      const filteredProduct = filteredProducts[0];
+      const itemContainer = document.getElementById("productImg");
+      const productBreName = document.getElementById("productBreName");
+      const nameOfProduct = document.getElementById("productName");
+      const nameOfPrice = document.getElementById("productPrice");
+      const productDesc = document.getElementById("productDesc");
+
+      productBreName.textContent = "home/" + filteredProduct.name;
+      nameOfProduct.textContent = filteredProduct.name;
+      nameOfPrice.textContent = "$" + filteredProduct.price;
+      productDesc.textContent = filteredProduct.description;
+      itemContainer.innerHTML = `<img src="${filteredProduct.image}" alt="${filteredProduct.name}" />`;
+
+      document
+        .getElementById("addToCartBtn")
+        .addEventListener("click", function (event) {
+          // Check if user is logged in
+          const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+          if (!userInfo) {
+            // If user is not logged in, show alert and redirect to login page
+            alert("Please login to add item to cart.");
+            window.location.href = "account.html"; // Adjust URL if your login page has a different name or location
+            event.preventDefault(); // Prevent the default behavior of the anchor tag (i.e., following the link)
+          } else {
+            window.location.href =
+              "purchase.html?name=" +
+              filteredProduct.name +
+              "&price=" +
+              filteredProduct.price;
+          }
+        });
+    </script>
+    <script src="js/searchButton.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

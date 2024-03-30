@@ -1,0 +1,34 @@
+[
+  {
+    "name": "tesla_roadster",
+    "description": "The Tesla Roadster is a high-performance all-electric sports car that can seat up to four passengers. It has a starting price of $200,000 and a range of 620 miles.",
+    "image": "images/anthony-a-atIR2-a_wQk-unsplash.jpg",
+    "price": 960,
+    "rating": 4,
+    "quantity": 20
+  },
+  {
+    "name": "tesla_model_s",
+    "description": "The Tesla Model S is a full-size all-electric luxury sedan that can seat up to five passengers. It has a starting price of $74,500 and a range of 335 miles.",
+    "image": "images/andreas-rasmussen-MBW3F1jEhh0-unsplash.jpg",
+    "rating": 5,
+    "price": 399,
+    "quantity": 10
+  },
+  {
+    "name": "tesla_model_x",
+    "description": "The Tesla Model X is a midsize all-electric luxury SUV that can seat up to seven passengers. It has a starting price of $65,500 and a range of 295 miles.",
+    "image": "images/philip-myrtorp-fL8WLU-LmFE-unsplash.jpg",
+    "price": 650,
+    "quantity": 50,
+    "rating": 3
+  },
+  {
+    "name": "tesla_model_3",
+    "description": "The Tesla Model 3 is a compact electric sedan that is the most affordable model in the automaker's lineup. It has a starting price of $29,000 and a range of 220 miles.",
+    "image": "images/austin-ramsey-U-DgtDG6MRo-unsplash.jpg",
+    "price": 290,
+    "quantity": 20,
+    "rating": 4
+  }
+]

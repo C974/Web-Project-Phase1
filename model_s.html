@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Products Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--<div class ="header">-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" width="125px" /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li class="search">
+              <input type="text" placeholder="Search..." />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="30px" height="30px"
+        /></a>
+        <img src="images/menu.png" class="<div class="mobilelink">
+            <a id="cartLink"
+              >" onClick="menutoggle()" />
+      </div>
+    </div>
+    <!--</div>-->
+
+    <!------------------------------ Single product details------------------------------>
+    <div class="small-container single-product">
+      <!--<h2 class="title" >Featured Products</h2>-->
+      <div class="row">
+        <div class="col-2">
+          <img
+            src="images/andreas-rasmussen-MBW3F1jEhh0-unsplash.jpg"
+            width="100%"
+            id="productImg"
+          />
+
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img
+                src="images/dmitry-novikov-49gi04Retc4-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/dmitry-novikov-Y1BCrRUK26Y-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/roberto-nickson-Ddjl0Cicdr4-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/taras-chernus-9uM2WBpum3M-unsplash.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <p>Home / Tesla Model S</p>
+          <h1>Tesla Model S</h1>
+          <h4>$39999</h4>
+          <select>
+            <option>Select Color</option>
+            <option>Midnight Silver Metallic</option>
+            <option>Pearl White Multi-Coat</option>
+            <option>Deep Blue Metallic</option>
+          </select>
+          <input type="number" values="1" />
+          <button class="btn" id="addToCartBtn">Add to Cart</button>
+          <h3>Product Details <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            Experience the pinnacle of automotive innovation with the Tesla
+            Model S. Blending cutting-edge technology, unrivaled performance,
+            and timeless design, the Model S redefines what a luxury electric
+            sedan can be. Whether you're drawn to its sleek aesthetics,
+            groundbreaking features, or eco-friendly credentials, the Model S
+            offers an unparalleled driving experience that transcends
+            expectations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------Title------------------------------------->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <a href="products.html"><p>View More</p></a>
+      </div>
+    </div>
+
+    <!----------------------------------products------------------------------------->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <a href="tesla_roadster.html"
+            ><img src="images/anthony-a-atIR2-a_wQk-unsplash.jpg"
+          /></a>
+          <a href="tesla_roadster.html"><h4>Tesla Roadster</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$96000</p>
+        </div>
+        <div class="col-4">
+          <a href="model3.html"
+            ><img src="images/austin-ramsey-U-DgtDG6MRo-unsplash.jpg"
+          /></a>
+          <h4>Tesla Model 3</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$29000</p>
+        </div>
+        <div class="col-4">
+          <a href="modelx.html"
+            ><img src="images/philip-myrtorp-fL8WLU-LmFE-unsplash.jpg"
+          /></a>
+          <h4>Tesla Model X</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$65000</p>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" />
+            <p>
+              Tesla's goal is to accelerate the world's transition to
+              sustainable energy through innovative electric vehicles and
+              renewable energy solutions.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <!--horizontal line-->
+        <p class="copyright">Copyright 2024 - A, Tesla, QU</p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const productName = "Tesla Model S";
+    const productPrice = "$39999";
+    document
+      .getElementById("addToCartBtn")
+      .addEventListener("click", function (event) {
+        // Check if user is logged in
+        const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+        if (!userInfo) {
+          // If user is not logged in, show alert and redirect to login page
+          alert("Please login to add item to cart.");
+          window.location.href = "account.html"; // Adjust URL if your login page has a different name or location
+          event.preventDefault(); // Prevent the default behavior of the anchor tag (i.e., following the link)
+        } else {
+          window.location.href =
+            "purchase.html?name=" + productName + "&price=" + productPrice;
+        }
+      });
+    // Get the search input and button
+    const searchInput = document.querySelector(".search input");
+    const searchButton = document.querySelector(".search button");
+
+    // Add an event listener to the search button click
+    searchButton.addEventListener("click", function (event) {
+      // Prevent the default button click behavior
+      event.preventDefault();
+
+      // Get the search query
+      const searchQuery = searchInput.value.trim();
+
+      // Redirect to the search.html page with the search term as a query parameter
+      window.location.href = `search.html?search=${encodeURIComponent(
+        searchQuery
+      )}`;
+    });
+  </script>
+</html>

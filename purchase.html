@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tesla Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!------------------------------ featured categories------------------------------>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about_us.html">About</a></li>
+              <li><a href="contact_us.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+              <li class="search">
+                <input type="text" placeholder="Search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-link">
+            <a id="cartLink"
+              ><img src="images/cart.png" width="30px" height="30px" />
+              <span id="moneyBalance"></span
+            ></a>
+            <div class="mobile-menu">
+              <img
+                src="images/menu.png"
+                class="menu-icon"
+                onClick="toggleMenu()"
+                alt="Menu Icon"
+              />
+              <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li class="search">
+                  <input type="text" placeholder="Search" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown" id="profileContainer" style="display: none">
+              <button class="dropdown-btn logout__btn">
+                <i class="bi bi-person-circle"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div id="customerMenu" style="display: none">
+                  <!-- Your menu items here -->
+                  <a href="my_order.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-cart"></i>
+                      <span>My Orders</span>
+                    </div>
+                  </a>
+                </div>
+                <div id="sellerMenu" style="display: none">
+                  <!-- Your menu items here -->
+                  <a href="order_list.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-cart"></i>
+                      <span>Sales History</span>
+                    </div>
+                  </a>
+                  <a href="products.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-list-ul"></i>
+                      <span>View items</span>
+                    </div>
+                  </a>
+                  <a href="add_product.html">
+                    <div class="dropdown-menu-list">
+                      <i class="bi bi-plus-circle"></i>
+                      <span>Add Product</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-menu-list" id="logout-btn">
+                  <i class="bi bi-box-arrow-left"></i>
+                  <span>Log Out</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--</div>-->
+
+    <div class="container purchase__form-container">
+      <h1>Enter Purchase Details</h1>
+      <form id="purchaseForm">
+        <div class="purchase__form">
+          <div>
+            <label for="quantity">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+              placeholder="Full Name"
+            />
+          </div>
+          <div>
+            <label for="quantity">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              required
+              placeholder="House no. / building / street / area"
+            />
+          </div>
+          <div>
+            <label for="quantity">Mobile Number</label>
+            <input
+              type="tel"
+              id="mobileNumber"
+              name="mobileNumber"
+              required
+              placeholder="Mobile Number"
+            />
+          </div>
+          <div>
+            <label for="quantity">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              placeholder="City"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required />
+        </div>
+
+        <button type="submit">Purchase</button>
+      </form>
+    </div>
+
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" />
+            <p>
+              Tesla's goal is to accelerate the world's transition to
+              sustainable energy through innovative electric vehicles and
+              renewable energy solutions.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <!--horizontal line-->
+        <p class="copyright">Copyright 2024 - A, Tesla, QU</p>
+      </div>
+    </div>
+    <script src="js/searchButton.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
+      const productName = urlParams.get("name");
+      const price = urlParams.get("price");
+
+      console.log(productName);
+      console.log(price);
+
+      let allProducts = JSON.parse(localStorage.getItem("allProducts"));
+      let UserInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+      const currentProduct = allProducts?.filter(
+        (product) => product.name === productName
+      )[0];
+
+      document
+        .getElementById("purchaseForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get form values
+          const quantity = parseInt(document.getElementById("quantity").value);
+          const shippingAddress = document.getElementById("address").value;
+          const fullName = document.getElementById("fullName").value;
+          const currnetUserInfo = UserInfo.customer;
+          console.log(currentProduct);
+          // Perform purchase logic here
+          const product = {
+            name: productName,
+            price: price * quantity,
+            image: currentProduct?.image,
+            quantity: quantity,
+            userName: currnetUserInfo.name,
+            deliveryName: fullName,
+            address: shippingAddress,
+            status: "Pending",
+          };
+
+          // Get the current products array from local storage or create an empty array if it doesn't exist
+          let products = JSON.parse(localStorage.getItem("soldProducts")) || [];
+
+          // Check if a product with the same name already exists
+          const existingProductIndex = products.findIndex(
+            (p) => p.name === productName
+          );
+
+          const restMoney = currnetUserInfo.money_balance;
+          const priceMoney = quantity * price;
+          console.log(priceMoney, "rest=>", restMoney);
+          if (restMoney > priceMoney) {
+            if (product.quantity > parseInt(currentProduct.quantity)) {
+              alert(
+                `product is limited. the res quantity is ${currentProduct.quantity}`
+              );
+            } else {
+              if (existingProductIndex !== -1) {
+                // If the product already exists, increase its quantity
+                products[existingProductIndex].quantity += quantity;
+              } else {
+                // If the product doesn't exist, add it to the products array
+                products.push(product);
+              }
+              const restQuantity =
+                parseInt(currentProduct.quantity) - product.quantity;
+
+              if (UserInfo.hasOwnProperty("customer")) {
+                currnetUserInfo.money_balance =
+                  currnetUserInfo.money_balance - quantity * price;
+                localStorage.setItem("userInfo", JSON.stringify(UserInfo));
+              }
+
+              const currentProductIndex = allProducts.findIndex(
+                (product) => product.name === productName
+              );
+
+              allProducts[currentProductIndex].quantity =
+                restQuantity.toString();
+
+              // Set the updated allProducts array back to localStorage
+              localStorage.setItem("allProducts", JSON.stringify(allProducts));
+
+              // Save the updated products array back to local storage
+              localStorage.setItem("soldProducts", JSON.stringify(products));
+              localStorage.setItem("soldProducts", JSON.stringify(products));
+              // For simplicity, let's assume the purchase is always successful
+              // You can add validation and other logic as needed
+
+              // Redirect to a confirmation page
+              window.location.href =
+                "purchase_confirmation.html?quantity=" +
+                quantity +
+                "&fullName=" +
+                encodeURIComponent(fullName) +
+                "&shippingAddress=" +
+                encodeURIComponent(shippingAddress);
+            }
+          } else {
+            alert("you don't have enought money to buy it");
+          }
+        });
+    </script>
+  </body>
+</html>

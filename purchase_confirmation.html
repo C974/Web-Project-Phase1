@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Confirmation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  </head>
+  <body>
+    <div class="confirmation_container">
+      <div id="lottieAnimation" style="width: 300px; height: 300px"></div>
+      <h1>Purchase Confirmation</h1>
+      <div id="purchaseDetails">
+        <p class="confirmation_text">
+          Thank you <span id="fullName"></span>, for your purchase!
+        </p>
+        <p class="confirmation_text">Quantity: <span id="quantity"></span></p>
+        <p class="confirmation_text">
+          Shipping Address: <span id="shippingAddress"></span>
+        </p>
+        <!-- You can display additional purchase details here -->
+      </div>
+      <a href="index.html"><button class="confirmation_btn">Home</button></a>
+    </div>
+
+    <script>
+      // Get purchase details from URL parameters
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const quantity = urlParams.get("quantity");
+
+      const shippingAddress = decodeURIComponent(
+        urlParams.get("shippingAddress")
+      );
+      const fullName = decodeURIComponent(urlParams.get("fullName"));
+
+      // Display purchase details on the page
+      document.getElementById("fullName").textContent = fullName;
+      document.getElementById("quantity").textContent = quantity;
+      document.getElementById("shippingAddress").textContent = shippingAddress;
+
+      const animation = lottie.loadAnimation({
+        container: document.getElementById("lottieAnimation"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "congratulations.json", // Path to your Lottie animation JSON file
+      });
+    </script>
+  </body>
+</html>
